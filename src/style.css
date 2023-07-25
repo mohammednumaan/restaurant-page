@@ -70,7 +70,12 @@ body{
 }
 
 .rick-roll{
-
+    visibility: visible;
     width: 300px;
     height: auto;
 }
+
+.rick-roll-hidden{
+    visibility: hidden;
+}
+

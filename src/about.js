@@ -9,6 +9,11 @@ const aboutBox = document.createElement('div')
 const aboutDetails = document.createElement('p')
 const content = document.getElementById('content')
 
+const rickRoll = document.createElement('img')
+rickRoll.src = rickroll
+rickRoll.classList.add('rick-roll-hidden')
+aboutBox.appendChild(rickRoll)
+
 
 function aboutContent(){
     aboutLink.style.backgroundColor = '#234E70'
@@ -19,13 +24,9 @@ function aboutContent(){
     aboutBox.classList.add('about-box')
     aboutHeader.textContent = 'ABOUT'
 
-    const rickRoll = document.createElement('img')
-    rickRoll.src = rickroll
+
+    rickRoll.classList.remove('rick-roll-hidden')
     rickRoll.classList.add('rick-roll')
-
-
-    
-    aboutBox.appendChild(rickRoll)
     document.getElementById('content').appendChild(aboutHeader)
     document.getElementById('content').appendChild(aboutBox)
     removeMenu()
@@ -36,8 +37,8 @@ function aboutContent(){
 function removeMenu(){
     content.removeChild(menuHeader)
     content.removeChild(menuBox)
-    menuHeader.textContent = 'ABOUT'
-    menuDetails.textContent = 'ABOUT Details Goes Here...'
+    aboutHeader.textContent = 'ABOUT'
+    //aboutDetails.textContent = 'ABOUT Details Goes Here...'
 
 }
 
