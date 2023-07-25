@@ -2,6 +2,7 @@
 
 import { aboutLink, menuLink } from "./homepage"
 import { menuBox, menuHeader } from "./menu"
+import rickroll from './rickroll-roll.gif'
 
 const aboutHeader = document.createElement('h1')
 const aboutBox = document.createElement('div')
@@ -18,7 +19,9 @@ function aboutContent(){
     aboutBox.classList.add('about-box')
     aboutHeader.textContent = 'ABOUT'
 
-    aboutDetails.textContent = 'About Details Goes Here...'
+    const rickroll = document.createElement('img')
+    rickroll.src = rickroll
+
     
     aboutBox.appendChild(aboutDetails)
     document.getElementById('content').appendChild(aboutHeader)
