@@ -19,11 +19,13 @@ function aboutContent(){
     aboutBox.classList.add('about-box')
     aboutHeader.textContent = 'ABOUT'
 
-    const rickroll = document.createElement('img')
-    rickroll.src = rickroll
+    const rickRoll = document.createElement('img')
+    rickRoll.src = rickroll
+    rickRoll.classList.add('rick-roll')
+
 
     
-    aboutBox.appendChild(aboutDetails)
+    aboutBox.appendChild(rickRoll)
     document.getElementById('content').appendChild(aboutHeader)
     document.getElementById('content').appendChild(aboutBox)
     removeMenu()
