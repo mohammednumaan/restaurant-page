@@ -1,7 +1,12 @@
+import img from './restaurant.jpg'
 
+
+// creates the header
+
+const headerDiv = document.createElement('div')
 
 function createHeader(){
-    const headerDiv = document.createElement('div')
+
     const headerTitle = document.createElement('h1')
 
     headerDiv.classList.add('header')
@@ -14,17 +19,45 @@ function createHeader(){
 }
 
 
+// creates the content container
+
 function createContent(){
     const imageDiv = document.createElement('div')
     const image = document.createElement('img')
-    image.src = './src/restaurant.jpg'
+    image.src = img
     image.alt = 'A restaurant.'
 
-    // imageDiv.classList.add('restaurant-image')
+    imageDiv.classList.add('image-container')
+    image.classList.add('restaurant-image')
 
     imageDiv.appendChild(image)
     document.getElementById('content').appendChild(imageDiv)
     
 }
 
-export {createHeader, createContent}
+
+// creates the tabs
+
+
+function createTab(){
+    const tabDiv = document.createElement('div')
+    menuLink.textContent = 'Menu'
+    aboutLink.textContent = 'About'
+    tabDiv.classList.add('tab')
+
+    tabDiv.appendChild(menuLink)
+    tabDiv.appendChild(aboutLink)
+    headerDiv.appendChild(tabDiv)  
+
+}
+
+// creating buttons 
+
+const menuLink = document.createElement('button')
+menuLink.id = 'menuBtn'
+const aboutLink = document.createElement('button')
+aboutLink.id = 'aboutBtn'
+
+
+
+export {createHeader, createContent, createTab, menuLink, aboutLink}

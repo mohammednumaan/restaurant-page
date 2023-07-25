@@ -1,13 +1,71 @@
 body{
     margin: 0;
+    padding: 0px;
+    background-color: #FBF8BE;
 }
+
+
 
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     background-color: #234E70;
     color: #FBF8BE;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.image-container{
+    display: block;
+    height: 641px;
+    margin-top: 3px;
+    margin-left: 3px;
+
+}
+.restaurant-image{
+    display: block;
+    height: 640px;
+
+
+
+}
+
+#menuBtn{
+
+    margin-right: 10px;
+}
+
+#menuBtn,
+#aboutBtn{
+    width: 80px;
+    border:4px solid #FBF8BE;
+    border-radius: 10px;
+}
+.menu-title,
+.about-title{
+
+    margin-top: -620px;
+    margin-left: 940px;
+    color: #234E70;
+}
+
+.menu-box,
+.about-box{
+     width: 800px;
+     height: 500px;
+     margin-top: -20px;
+     margin-left: 580px;
+     border: 5px solid #234E70;
+     border-radius: 20px ;
+     box-shadow: #234E70 -5px 5px, #234E70 -10px 10px, #234E70 -15px 15px;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #234E70;
+     font-size: 45px;
 }
 
